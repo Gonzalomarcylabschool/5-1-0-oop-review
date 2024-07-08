@@ -30,6 +30,10 @@ class Teacher {
     return Math.floor(Math.random() * 1000);
   }
 
+  getId() {
+    return this.#id;
+  }
+
   addStudent(student) {
     this.#students.push(student);
     console.log(`${student.name} with ID ${student.getId()} has been added to ${this.name}'s class.`);
