@@ -8,7 +8,11 @@ class Student {
   }
 
   static generateId() {
-    return Math.floor(Math.random() * 1000); 
+    let id = 0;
+    return () => {
+      id++;
+    return id;
+  }
   }
 
   getId() {
@@ -27,7 +31,11 @@ class Teacher {
   }
 
   static generateId() {
-    return Math.floor(Math.random() * 1000);
+    let id = 0;
+  return () => {
+    id++;
+    return id;
+  }
   }
 
   getId() {
